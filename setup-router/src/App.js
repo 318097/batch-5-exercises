@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route } from 'react-router-dom'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
 import Navbar from './components/Navbar';
 import Home from './components/Home';
@@ -15,10 +15,12 @@ class App extends Component {
 
         <React.Fragment>
           <Navbar />
-          <Route exact activeClassName="active" path="/home" component={Home} />
-          <Route exact activeClassName="active" path="/about" component={About} />
-          <Route exact activeClassName="active" path="/contact" component={Contact} />
-          <Route path="*" component={PageNotFound} />
+          <Switch>
+            <Route exact path="/home" component={Home} />
+            <Route exact path="/about" component={About} />
+            <Route exact path="/contact" component={Contact} />
+            <Route path="*" component={PageNotFound} />
+          </Switch>
         </React.Fragment>
       </BrowserRouter>
     );
