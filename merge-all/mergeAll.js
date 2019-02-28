@@ -1,6 +1,6 @@
 
-function mergeAll(...args) {
-  return args;
+function mergeAll(arr) {
+  return arr.reduce((acc, obj) => ({ ...acc, ...obj }), {});
 }
 
 export {

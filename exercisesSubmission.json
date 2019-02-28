@@ -1,10 +1,10 @@
 {
-  "name": "Your name",
-  "email": "Your email",
-  "batch": "Batch Number",
+  "name": "Mehul Lakhanpal",
+  "email": "318097@gmail.com",
+  "batch": "5",
   "exercises": {
     "merge-all": {
-      "completed": false,
+      "completed": true,
       "rating": null
     },
     "nth-arg": {
@@ -20,7 +20,7 @@
       "rating": null
     },
     "setup-router": {
-      "completed": false,
+      "completed": true,
       "rating": null
     }
   }
